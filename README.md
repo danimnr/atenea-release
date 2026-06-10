@@ -23,7 +23,7 @@
 
 ## Instalación
 
-Descarga el archivo `.deb` desde [Releases](https://github.com/danimnr/atenea-releases/releases) y ejecuta:
+Descarga el archivo `.deb` desde [Releases](https://github.com/danimnr/atenea-release/releases/tag/v1.0.4) y ejecuta:
 
 ```bash
 cd ~/Descargas
