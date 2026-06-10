@@ -41,6 +41,10 @@ sudo apt install ./atenea_1.0.4_amd64.deb
 sudo apt remove atenea
 ```
 
-## Capturas de pantalla
+## Novedades v1.0.4
 
-*Próximamente*
+- 🎨 Color de acento personalizable (rueda de colores)
+- ✦ Efecto cristal con opacidad ajustable
+- ⌨ Atajos de teclado (N, H, flechas)
+- 📋 Pendientes anteriores (desplegable)
+- 🌙 Adaptación automática tema claro/oscuro
