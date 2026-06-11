@@ -27,7 +27,7 @@ Descarga el archivo `.deb` desde [Releases](https://github.com/danimnr/atenea-re
 
 ```bash
 cd ~/Descargas
-sudo apt install ./atenea_1.0.5_amd64.deb
+sudo apt install ./atenea_1.0.6_amd64.deb
 ```
 
 ## Requisitos
