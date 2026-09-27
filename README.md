@@ -1,90 +1,66 @@
 <div align="center">
   <img src="icon.png" width="128" alt="Atenea">
-  
+
   # Atenea
-  
+
   **Tu tiempo, bajo control**
-  
-  Calendario personal de tareas para escritorio Linux. Completamente local, sin cuentas, sin internet, sin telemetría.
-  
-  ![Debian](https://img.shields.io/badge/Debian-12+-red?style=flat-square&logo=debian)
-  ![GNOME](https://img.shields.io/badge/GNOME-compatible-blue?style=flat-square&logo=gnome)
-  ![License](https://img.shields.io/badge/License-GPL--3.0-purple?style=flat-square)
-  ![Open Source](https://img.shields.io/badge/Código-Abierto-green?style=flat-square)
+
+  Calendario y gestor de tareas personal para Windows, Linux y Android. Local por defecto, con sincronización opcional con tu cuenta de Google.
+
+  ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-blue?style=flat-square&logo=windows)
+  ![Linux](https://img.shields.io/badge/Linux-deb%20%7C%20rpm%20%7C%20AppImage-orange?style=flat-square&logo=linux)
+  ![Android](https://img.shields.io/badge/Android-Google%20Play-green?style=flat-square&logo=android)
 
 </div>
 
+## Descargar
+
+👉 **[Última versión](https://github.com/danimnr/atenea-release/releases/latest)** · también desde **[atenea.sbs](https://atenea.sbs)**
+
+| Sistema | Archivo |
+|---|---|
+| Windows 10/11 (64 bits) | `Atenea_x.y.z_x64-setup.exe` |
+| Debian, Ubuntu, Linux Mint… | `Atenea_x.y.z_amd64.deb` |
+| Fedora, openSUSE… | `Atenea-x.y.z-1.x86_64.rpm` |
+| Cualquier distribución Linux | `Atenea_x.y.z_amd64.AppImage` |
+| Android | [Google Play](https://play.google.com/store/apps/details?id=com.danidev.atenea_mobile) |
+
 ## Características
 
-- 📆 Calendario mensual visual
-- ✅ Crear, editar y eliminar tareas
-- ⏰ Hora y prioridad por tarea
-- 📋 Próximas tareas y pendientes anteriores
-- 🎨 Color de acento personalizable
-- ✦ Efecto cristal opcional
-- ⌨ Atajos de teclado
-- 📥 Importar/exportar calendarios (.ics)
-- 🔒 100% local — tus datos no salen de tu ordenador
-- 🌙 Tema claro y oscuro
+- 🗓️ Vistas Día, Semana, Mes y Año (estilo Google Calendar), además de la vista clásica
+- ✅ Tareas con hora de inicio y de fin, prioridad y descripción
+- ☁️ Sincronización con tu cuenta de Google entre escritorio, web y móvil — o uso 100 % local sin cuenta
+- 📥 Importar y exportar calendarios `.ics`
+- 🎨 Tema claro, oscuro o del sistema y colores personalizables
+- ⌨️ Atajos de teclado
 
 ## Instalación
 
-Descarga el archivo `.deb` desde [Releases](https://github.com/danimnr/atenea-release/releases) y ejecuta:
+**Windows:** ejecuta el instalador. Si aparece *"Windows protegió su PC"*, pulsa **Más información → Ejecutar de todas formas** (el instalador aún no está firmado con un certificado de pago).
 
+**Linux (.deb):**
 ```bash
-cd ~/Descargas
-sudo apt install ./atenea_1.0.6_amd64.deb
+sudo apt install ./Atenea_x.y.z_amd64.deb
 ```
+Requisitos: Debian 12, Ubuntu 22.04, Linux Mint 21 o posteriores.
 
-## Requisitos
-
-- Debian 12 / Ubuntu 22.04 o posterior
-- Escritorio GNOME
-
-## Desinstalar
-
-```bash
-sudo apt remove atenea
-```
-
-Para eliminar también todos los datos:
-
-```bash
-rm -rf ~/.local/share/atenea ~/.config/atenea ~/.cache/atenea
-```
-
-## Privacidad y datos
-
-Atenea **no se conecta a internet**, no crea cuentas y no envía ningún dato a ningún servidor.
-
-Todos los datos se almacenan localmente en tu ordenador:
-
-| Tipo | Ruta |
-|------|------|
-| Base de datos (tareas) | `~/.local/share/atenea/atenea.db` |
-| Configuración | `~/.config/atenea/settings.json` |
-| Logs | `~/.cache/atenea/atenea.log` |
-
-La base de datos es un archivo SQLite estándar que puedes abrir, inspeccionar o eliminar en cualquier momento.
+**Linux (.AppImage):** `chmod +x Atenea_x.y.z_amd64.AppImage` y ábrelo.
 
 ## Verificación de integridad
 
-Para verificar que el archivo descargado no ha sido modificado:
+Cada release incluye la huella SHA-256 de sus archivos en las notas. Para comprobar una descarga:
 
 ```bash
-sha256sum atenea_1.0.6_amd64.deb
+sha256sum Atenea_x.y.z_amd64.deb      # Linux
+Get-FileHash .\Atenea_x.y.z_x64-setup.exe   # Windows (PowerShell)
 ```
 
-El hash SHA-256 oficial de `v1.0.6` es:
-dc5fd064502c9ced9ac44c6c7b1a1c578e61ea3eb6c841a654de406cc8ce548a
+## Versión antigua para GNOME
 
-## Código fuente
-
-El código fuente completo está disponible en:
-**https://github.com/danimnr/atenea**
+La versión para escritorio GNOME (Python + GTK4, hasta la 1.0.6) queda retirada y sin soporte: la nueva versión de Linux la sustituye y, al instalar su `.deb`, se actualiza encima.
 
 ## Autor
 
-Desarrollado por **danidev_mnr**
+Desarrollado por **danidev_mnr** (D.A.S. Interactive Software)
 - GitHub: [github.com/danimnr](https://github.com/danimnr)
 - ☕ [Ko-fi](https://ko-fi.com/danidev_mnr)
